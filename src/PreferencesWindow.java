@@ -122,7 +122,7 @@ public class PreferencesWindow extends JFrame
 			{
 				try
 				{
-					File pref = new File("preferences.txt");
+					File pref = new File("resources/preferences.txt");
 					
 					if(! (pref.exists()) ) 
 					{

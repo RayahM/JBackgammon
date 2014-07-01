@@ -245,7 +245,7 @@ public class BoardWindow extends JFrame
 	{
 		try
 		{
-			BufferedReader br = new BufferedReader(new FileReader(new File("preferences.txt")));
+			BufferedReader br = new BufferedReader(new FileReader(new File("resources/preferences.txt")));
 			String s1 = br.readLine();
 			String s2 = br.readLine();
 			String s3 = br.readLine();
@@ -325,7 +325,7 @@ public class BoardWindow extends JFrame
 	private void AddBoard()
 	{
 		//adding the board image to the window.
-		boardimg = new ImageIcon("Images/board.png");
+		boardimg = new ImageIcon("resources/Images/board.png");
 		boardLabel = new JLabel(boardimg);
 		boardLabel.setBounds(0,0,720,641);
 		boardLabel.setVisible(true);
@@ -972,25 +972,25 @@ public class BoardWindow extends JFrame
 	//places the dice images on the window.
 	private void AddDices()
 	{
-		icon_dice_1 = new ImageIcon("Images/1.png");
+		icon_dice_1 = new ImageIcon("resources/Images/1.png");
 		label_dice_1 = new JLabel(icon_dice_1);
 		label_dice_1.setBounds(490,300,31,32);
 		label_dice_1.setVisible(false);
 		boardLabel.add(label_dice_1);
 		
-		icon_dice_2 = new ImageIcon("Images/1.png");
+		icon_dice_2 = new ImageIcon("resources/Images/1.png");
 		label_dice_2 = new JLabel(icon_dice_2);
 		label_dice_2.setBounds(550,300,31,32);
 		label_dice_2.setVisible(false);
 		boardLabel.add(label_dice_2);
 		
-		initial_dice_player_icon_1 = new ImageIcon("Images/1.png");
+		initial_dice_player_icon_1 = new ImageIcon("resources/Images/1.png");
 		initial_dice_player_label_1 = new JLabel(initial_dice_player_icon_1);
 		initial_dice_player_label_1.setBounds(163,250,32,32);
 		initial_dice_player_label_1.setVisible(false);
 		boardLabel.add(initial_dice_player_label_1);
 		
-		initial_dice_player_icon_2 = new ImageIcon("Images/1.png");
+		initial_dice_player_icon_2 = new ImageIcon("resources/Images/1.png");
 		initial_dice_player_label_2 = new JLabel(initial_dice_player_icon_2);
 		initial_dice_player_label_2.setBounds(163,360,32,32);
 		initial_dice_player_label_2.setVisible(false);
@@ -1865,42 +1865,42 @@ public class BoardWindow extends JFrame
     {	
     	if(flag == 0)
     	{
-    		if      (i == 0) label_dice_1.setIcon(new ImageIcon("Images/1.png"));
-            else if (i == 1) label_dice_1.setIcon(new ImageIcon("Images/2.png"));
-            else if (i == 2) label_dice_1.setIcon(new ImageIcon("Images/3.png"));
-            else if (i == 3) label_dice_1.setIcon(new ImageIcon("Images/4.png"));
-            else if (i == 4) label_dice_1.setIcon(new ImageIcon("Images/5.png"));
-            else if (i == 5) label_dice_1.setIcon(new ImageIcon("Images/6.png"));
+    		if      (i == 0) label_dice_1.setIcon(new ImageIcon("resources/Images/1.png"));
+            else if (i == 1) label_dice_1.setIcon(new ImageIcon("resources/Images/2.png"));
+            else if (i == 2) label_dice_1.setIcon(new ImageIcon("resources/Images/3.png"));
+            else if (i == 3) label_dice_1.setIcon(new ImageIcon("resources/Images/4.png"));
+            else if (i == 4) label_dice_1.setIcon(new ImageIcon("resources/Images/5.png"));
+            else if (i == 5) label_dice_1.setIcon(new ImageIcon("resources/Images/6.png"));
     	}
     	
     	else if (flag == 1)
     	{
-    		if      (i == 0) label_dice_2.setIcon(new ImageIcon("Images/1.png"));
-            else if (i == 1) label_dice_2.setIcon(new ImageIcon("Images/2.png"));
-            else if (i == 2) label_dice_2.setIcon(new ImageIcon("Images/3.png"));
-            else if (i == 3) label_dice_2.setIcon(new ImageIcon("Images/4.png"));
-            else if (i == 4) label_dice_2.setIcon(new ImageIcon("Images/5.png"));
-            else if (i == 5) label_dice_2.setIcon(new ImageIcon("Images/6.png"));
+    		if      (i == 0) label_dice_2.setIcon(new ImageIcon("resources/Images/1.png"));
+            else if (i == 1) label_dice_2.setIcon(new ImageIcon("resources/Images/2.png"));
+            else if (i == 2) label_dice_2.setIcon(new ImageIcon("resources/Images/3.png"));
+            else if (i == 3) label_dice_2.setIcon(new ImageIcon("resources/Images/4.png"));
+            else if (i == 4) label_dice_2.setIcon(new ImageIcon("resources/Images/5.png"));
+            else if (i == 5) label_dice_2.setIcon(new ImageIcon("resources/Images/6.png"));
     	}
     	
     	else if (flag == 2)
     	{
-    		if      (i == 0) initial_dice_player_label_2.setIcon(new ImageIcon("Images/1.png"));
-            else if (i == 1) initial_dice_player_label_2.setIcon(new ImageIcon("Images/2.png"));
-            else if (i == 2) initial_dice_player_label_2.setIcon(new ImageIcon("Images/3.png"));
-            else if (i == 3) initial_dice_player_label_2.setIcon(new ImageIcon("Images/4.png"));
-            else if (i == 4) initial_dice_player_label_2.setIcon(new ImageIcon("Images/5.png"));
-            else if (i == 5) initial_dice_player_label_2.setIcon(new ImageIcon("Images/6.png"));
+    		if      (i == 0) initial_dice_player_label_2.setIcon(new ImageIcon("resources/Images/1.png"));
+            else if (i == 1) initial_dice_player_label_2.setIcon(new ImageIcon("resources/Images/2.png"));
+            else if (i == 2) initial_dice_player_label_2.setIcon(new ImageIcon("resources/Images/3.png"));
+            else if (i == 3) initial_dice_player_label_2.setIcon(new ImageIcon("resources/Images/4.png"));
+            else if (i == 4) initial_dice_player_label_2.setIcon(new ImageIcon("resources/Images/5.png"));
+            else if (i == 5) initial_dice_player_label_2.setIcon(new ImageIcon("resources/Images/6.png"));
     	}
     	
     	else
     	{
-    		if      (i == 0) initial_dice_player_label_1.setIcon(new ImageIcon("Images/1.png"));
-            else if (i == 1) initial_dice_player_label_1.setIcon(new ImageIcon("Images/2.png"));
-            else if (i == 2) initial_dice_player_label_1.setIcon(new ImageIcon("Images/3.png"));
-            else if (i == 3) initial_dice_player_label_1.setIcon(new ImageIcon("Images/4.png"));
-            else if (i == 4) initial_dice_player_label_1.setIcon(new ImageIcon("Images/5.png"));
-            else if (i == 5) initial_dice_player_label_1.setIcon(new ImageIcon("Images/6.png"));
+    		if      (i == 0) initial_dice_player_label_1.setIcon(new ImageIcon("resources/Images/1.png"));
+            else if (i == 1) initial_dice_player_label_1.setIcon(new ImageIcon("resources/Images/2.png"));
+            else if (i == 2) initial_dice_player_label_1.setIcon(new ImageIcon("resources/Images/3.png"));
+            else if (i == 3) initial_dice_player_label_1.setIcon(new ImageIcon("resources/Images/4.png"));
+            else if (i == 4) initial_dice_player_label_1.setIcon(new ImageIcon("resources/Images/5.png"));
+            else if (i == 5) initial_dice_player_label_1.setIcon(new ImageIcon("resources/Images/6.png"));
     	}
     }
     
