@@ -1,0 +1,3 @@
+player : GREEN
+computer : RED
+depth : 1
