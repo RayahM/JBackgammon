@@ -245,8 +245,8 @@ public class Board implements Cloneable
     //evaluates the current board according to the heuristics.
     public double Evaluate()
     {
-        double blackPoints = (BlackDoors()) + (2 * BlackDoorsInRow()) - (2 * ExposedBlackPieces()) + (10 * BlackPiecesOut()) + (20000 * CapturedWhitePieces()) ;
-        double whitePoints = (WhiteDoors()) + (2 * WhiteDoorsInRow()) - (2 * ExposedWhitePieces()) + (10 * WhitePiecesOut()) + (2 * CapturedBlackPieces()) ;
+        double blackPoints = (BlackDoors()) + (2 * BlackDoorsInRow()) - (2 * ExposedBlackPieces()) + (10 * BlackPiecesOut()) + (4 * CapturedWhitePieces()) ;
+        double whitePoints = (WhiteDoors()) + (2 * WhiteDoorsInRow()) - (2 * ExposedWhitePieces()) + (10 * WhitePiecesOut()) + (4 * CapturedBlackPieces()) ;
        
         return (blackPoints - whitePoints);
     } 
