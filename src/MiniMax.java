@@ -97,7 +97,7 @@ public class MiniMax
 
         //The children-moves of the state are calculated
         ArrayList<Board> children = new ArrayList<Board>(board.GetChildren(dice1,dice2));
-        Move minMove = new Move(Integer.MIN_VALUE);
+        Move minMove = new Move(Integer.MAX_VALUE);
 
         for(Board child : children)
         {
